@@ -87,7 +87,7 @@ namespace LicenceToBill.Api.Tools
         public static string Serialize<TContent>(TContent content)
             where TContent : class
         {
-            var result = new StringBuilder(2000);
+            var result = new StringBuilder(200);
 
             // if we got a content
             if(content != null)

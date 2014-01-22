@@ -10,7 +10,7 @@ using LicenceToBill.Api.Tools;
 namespace LicenceToBill.Web.DemoRest
 {
     [Authenticated]
-    public class TestApiController : Controller
+    public partial class TestApiController : Controller
     {
         #region Actions
 

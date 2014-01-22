@@ -15,14 +15,14 @@ namespace LicenceToBill.Api
     /// Defensive methods :
     /// assumes everything is not ok, performs all checks before processing and never throws an exception
     /// </summary>
-    partial class LicenceManager
+    partial class LicenceManagerDefault : ILicenceManager
     {
         #region Users
 
         /// <summary>
         /// Try to list all users
         /// </summary>
-        public static ResponseEx TryListUsers(out List<UserV2> users)
+        public ResponseEx TryListUsers(out List<UserV2> users)
         {
             ResponseEx result = null;
             users = null;
@@ -36,6 +36,8 @@ namespace LicenceToBill.Api
             {
                 // create the request and send it
                 result = RequestFluent.Create(url)
+                    .ContentType(LtbConstants.Json)
+                    .BasicAuthentication(LtbConstants.KeyBusiness, LtbConstants.KeyApi)
                     .Send();
 
                 // if we have a response
@@ -56,7 +58,7 @@ namespace LicenceToBill.Api
         /// <summary>
         /// Try to list all users
         /// </summary>
-        public static ResponseEx TryGetUser(string keyUser, out UserV2 user)
+        public ResponseEx TryGetUser(string keyUser, out UserV2 user)
         {
             ResponseEx result = null;
             user = null;
@@ -70,6 +72,8 @@ namespace LicenceToBill.Api
             {
                 // create the request and send it
                 result = RequestFluent.Create(url)
+                    .ContentType(LtbConstants.Json)
+                    .BasicAuthentication(LtbConstants.KeyBusiness, LtbConstants.KeyApi)
                     .Send();
 
                 // if we have a response
@@ -90,7 +94,7 @@ namespace LicenceToBill.Api
         /// <summary>
         /// Post a user
         /// </summary>
-        public static ResponseEx TryPostUser(string keyUser, string nameUser, int? lcid, out UserV2 user)
+        public ResponseEx TryPostUser(string keyUser, string nameUser, int? lcid, out UserV2 user)
         {
             ResponseEx result = null;
             user = null;
@@ -112,6 +116,8 @@ namespace LicenceToBill.Api
 
                 // create the request and send it
                 result = RequestFluent.Create(url)
+                    .ContentType(LtbConstants.Json)
+                    .BasicAuthentication(LtbConstants.KeyBusiness, LtbConstants.KeyApi)
                     .Method(HttpVerbs.Post)
                     .SendJson(userToSend);
 
@@ -133,7 +139,7 @@ namespace LicenceToBill.Api
         /// <summary>
         /// List users having access to given feature
         /// </summary>
-        public static ResponseEx TryListUsersByFeature(string keyFeature, out List<UserV2> users)
+        public ResponseEx TryListUsersByFeature(string keyFeature, out List<UserV2> users)
         {
             ResponseEx result = null;
             users = null;
@@ -147,6 +153,8 @@ namespace LicenceToBill.Api
             {
                 // create the request and send it
                 result = RequestFluent.Create(url)
+                    .ContentType(LtbConstants.Json)
+                    .BasicAuthentication(LtbConstants.KeyBusiness, LtbConstants.KeyApi)
                     .Send();
 
                 // if we have a response
@@ -172,7 +180,7 @@ namespace LicenceToBill.Api
         /// <summary>
         /// List all features
         /// </summary>
-        public static ResponseEx TryListFeatures(int? lcid, out List<FeatureV2> features)
+        public ResponseEx TryListFeatures(int? lcid, out List<FeatureV2> features)
         {
             ResponseEx result = null;
             features = null;
@@ -186,6 +194,8 @@ namespace LicenceToBill.Api
             {
                 // create the request and send it
                 result = RequestFluent.Create(url)
+                    .ContentType(LtbConstants.Json)
+                    .BasicAuthentication(LtbConstants.KeyBusiness, LtbConstants.KeyApi)
                     .Send();
 
                 // if we have a response
@@ -206,7 +216,7 @@ namespace LicenceToBill.Api
         /// <summary>
         /// List features accessible to given user
         /// </summary>
-        public static ResponseEx TryListFeaturesByUser(string keyUser, out List<FeatureV2> features)
+        public ResponseEx TryListFeaturesByUser(string keyUser, out List<FeatureV2> features)
         {
             ResponseEx result = null;
             features = null;
@@ -220,6 +230,8 @@ namespace LicenceToBill.Api
             {
                 // create the request and send it
                 result = RequestFluent.Create(url)
+                    .ContentType(LtbConstants.Json)
+                    .BasicAuthentication(LtbConstants.KeyBusiness, LtbConstants.KeyApi)
                     .Send();
 
                 // if we have a response
@@ -240,7 +252,7 @@ namespace LicenceToBill.Api
         /// <summary>
         /// Get a limitation for a feature and a user
         /// </summary>
-        public static ResponseEx TryGetLimitation(string keyFeature, string keyUser, out FeatureV2 feature)
+        public ResponseEx TryGetLimitation(string keyFeature, string keyUser, out FeatureV2 feature)
         {
             ResponseEx result = null;
             feature = null;
@@ -254,6 +266,8 @@ namespace LicenceToBill.Api
             {
                 // create the request and send it
                 result = RequestFluent.Create(url)
+                    .ContentType(LtbConstants.Json)
+                    .BasicAuthentication(LtbConstants.KeyBusiness, LtbConstants.KeyApi)
                     .Send();
 
                 // if we have a response
@@ -279,7 +293,7 @@ namespace LicenceToBill.Api
         /// <summary>
         /// List all features
         /// </summary>
-        public static ResponseEx TryListOffers(int? lcid, out List<OfferV2> offers)
+        public ResponseEx TryListOffers(int? lcid, out List<OfferV2> offers)
         {
             ResponseEx result = null;
             offers = null;
@@ -293,6 +307,8 @@ namespace LicenceToBill.Api
             {
                 // create the request and send it
                 result = RequestFluent.Create(url)
+                    .ContentType(LtbConstants.Json)
+                    .BasicAuthentication(LtbConstants.KeyBusiness, LtbConstants.KeyApi)
                     .Send();
 
                 // if we have a response
@@ -313,7 +329,7 @@ namespace LicenceToBill.Api
         /// <summary>
         /// List offers with user-specific url for given user
         /// </summary>
-        public static ResponseEx TryListOffersByUser(string keyUser, out List<OfferV2> offers)
+        public ResponseEx TryListOffersByUser(string keyUser, out List<OfferV2> offers)
         {
             ResponseEx result = null;
             offers = null;
@@ -327,6 +343,8 @@ namespace LicenceToBill.Api
             {
                 // create the request and send it
                 result = RequestFluent.Create(url)
+                    .ContentType(LtbConstants.Json)
+                    .BasicAuthentication(LtbConstants.KeyBusiness, LtbConstants.KeyApi)
                     .Send();
 
                 // if we have a response
@@ -352,7 +370,7 @@ namespace LicenceToBill.Api
         /// <summary>
         /// List all features
         /// </summary>
-        public static ResponseEx TryListDealsByUser(string keyUser, out List<DealV2> deals)
+        public ResponseEx TryListDealsByUser(string keyUser, out List<DealV2> deals)
         {
             ResponseEx result = null;
             deals = null;
@@ -366,6 +384,8 @@ namespace LicenceToBill.Api
             {
                 // create the request and send it
                 result = RequestFluent.Create(url)
+                    .ContentType(LtbConstants.Json)
+                    .BasicAuthentication(LtbConstants.KeyBusiness, LtbConstants.KeyApi)
                     .Send();
 
                 // if we have a response
@@ -388,7 +408,7 @@ namespace LicenceToBill.Api
         /// - Enable a free trial
         /// - returns its available features
         /// </summary>
-        public static ResponseEx TryPostTrial(string keyOffer, string keyUser, string nameUser, int? lcid, out List<FeatureV2> features)
+        public ResponseEx TryPostTrial(string keyOffer, string keyUser, string nameUser, int? lcid, out List<FeatureV2> features)
         {
             ResponseEx result = null;
             features = null;
@@ -411,6 +431,8 @@ namespace LicenceToBill.Api
 
                 // create the request and send it
                 result = RequestFluent.Create(url)
+                    .ContentType(LtbConstants.Json)
+                    .BasicAuthentication(LtbConstants.KeyBusiness, LtbConstants.KeyApi)
                     .Method(HttpVerbs.Post)
                     .SendJson(dealToSend);
 

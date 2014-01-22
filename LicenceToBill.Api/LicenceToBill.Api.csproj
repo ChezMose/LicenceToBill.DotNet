@@ -50,9 +50,10 @@
     <Compile Include="DTO\OfferV2.cs" />
     <Compile Include="DTO\StageV2.cs" />
     <Compile Include="DTO\UserV2.cs" />
+    <Compile Include="ILicenceManager.cs" />
     <Compile Include="LicenceManager.cs" />
-    <Compile Include="LicenceManager.defensive.cs" />
-    <Compile Include="LicenceManager.offensive.cs" />
+    <Compile Include="LicenceManager\LicenceManagerDefault.defensive.cs" />
+    <Compile Include="LicenceManager\LicenceManagerDefault.offensive.cs" />
     <Compile Include="LtbTools\LtbConstants.cs" />
     <Compile Include="LtbTools\LtbRessources.cs" />
     <Compile Include="LtbTools\LtbUrl.cs" />

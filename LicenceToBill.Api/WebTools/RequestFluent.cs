@@ -223,7 +223,7 @@ namespace LicenceToBill.Api.Tools
             var type = ParseContentType(contentType);
             // if succeeded
             if(type != null)
-                // call the overload
+                // store the header
                 this.Accept(type);
 
             return this;
@@ -233,26 +233,23 @@ namespace LicenceToBill.Api.Tools
         /// </summary>
         public RequestFluent Accept(ContentType contentType)
         {
-            // if valid
-            if(contentType != null)
+            // if we already have an accept header
+            if(!string.IsNullOrEmpty(this._accept))
             {
-                // if we already have an accept header
-                string accept = null;
-                if ((this._headers != null)
-                    && this._headers.TryGetValue("Accept", out accept)
-                    && !string.IsNullOrEmpty(accept))
-                {
+                // if we have a content type
+                if(contentType != null)
                     // concatenate
-                    accept += ";" + contentType;
-                }
-                    // if it's the first accepted content type
+                    this._accept += ";" + contentType;
+                // if no content type
                 else
-                    // use it as accept header
-                    accept = contentType.ToString();
-
-                // set the header
-                this.Header("Accept", accept);
+                    // clear
+                    this._accept = null;
             }
+            // if no accept header yet, but we have a given content type
+            else if(contentType != null)
+                // use it as accept header
+                this._accept = contentType.ToString();
+
             return this;
         }
         /// <summary>
@@ -551,14 +548,17 @@ namespace LicenceToBill.Api.Tools
                 // create the content type
                 // use forced content-type, if none, use specified content-type, if none, clone default content-type
                 this._contentType = (contentType ?? this._contentType ?? new ContentType(ContentTypeDefault.ToString()));
-
                 // if we have an encoding or a content type
                 if (this._encoding != null)
                     // then set the encoding
                     this._contentType.CharSet = this._encoding.HeaderName;
-
                 // now set the content-type in the request
                 request.ContentType = this._contentType.ToString();
+
+                // if we got an accept string
+                if(!string.IsNullOrEmpty(this._accept))
+                    // set it
+                    request.Accept = this._accept;
 
                 // if we got a user-agent
                 if(this._userAgent != null)
@@ -603,6 +603,10 @@ namespace LicenceToBill.Api.Tools
         /// HTTP user agent
         /// </summary>
         private string _userAgent = null;
+        /// <summary>
+        /// Accept string
+        /// </summary>
+        private string _accept = null;
         /// <summary>
         /// Headers
         /// </summary>

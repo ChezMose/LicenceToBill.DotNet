@@ -96,7 +96,7 @@ namespace LicenceToBill.Api.Tools
                     catch (Exception exc)
                     {
                         // set an error message
-                        errorMessage = "Exception while reading JSON content of a request to " + exc.Message;
+                        errorMessage = "Exception while reading the body of the reponse - " + exc.Message;
                     }
                 }
 
@@ -257,6 +257,8 @@ namespace LicenceToBill.Api.Tools
                     &&
                     (   // status code is 'OK'
                         this.Response.StatusCode == HttpStatusCode.OK
+                        || // or status code is 'Create'
+                        this.Response.StatusCode == HttpStatusCode.Created
                         || // or status code is 'No content'
                         this.Response.StatusCode == HttpStatusCode.NoContent
                     );
@@ -275,8 +277,12 @@ namespace LicenceToBill.Api.Tools
                     string.IsNullOrEmpty(this.MessageError)
                     // we got a response
                     && (this.Response != null)
-                    // status code is 'OK'
-                    && (this.Response.StatusCode == HttpStatusCode.OK)
+                    &&
+                    (   // status code is 'OK'
+                        this.Response.StatusCode == HttpStatusCode.OK
+                        || // or status code is 'Create'
+                        this.Response.StatusCode == HttpStatusCode.Created
+                    )
                     // we have a memory stream
                     && (this.MemStream != null)
                     // the memory stream is not empty

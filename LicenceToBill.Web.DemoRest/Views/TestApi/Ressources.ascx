@@ -34,3 +34,11 @@
         <a href="/TestApi/Trial" class="button">Trial</a>
     </li>
 </ul>
+
+<hr />
+<ul>
+    <li>
+        <a href="/Paybox" class="button">Paybox test</a>
+    </li>
+</ul>
+

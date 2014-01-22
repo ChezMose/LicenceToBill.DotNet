@@ -14,7 +14,7 @@
     <AssemblyName>LicenceToBill.Web.DemoRest</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -50,6 +50,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.CloudDrive, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Diagnostics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.ServiceRuntime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.WindowsAzure.StorageClient, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json">
@@ -100,25 +110,25 @@
   <ItemGroup>
     <Compile Include="Code\Misc\AuthenticatedAttribute.cs" />
     <Compile Include="Code\Misc\Authenticator.cs" />
+    <Compile Include="Code\Misc\CsvResult.cs" />
     <Compile Include="Code\Misc\DataManager.cs" />
     <Compile Include="Code\Misc\CustomPrincipal.cs" />
     <Compile Include="Code\Misc\ExtensionsViewUserControl.cs" />
+    <Compile Include="Controllers\TestApiController.overload.cs" />
+    <Compile Include="Controllers\PayboxController.cs" />
     <Compile Include="Controllers\TestApiController.cs" />
     <Compile Include="Controllers\DemoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Paybox\ModelPayboxTraceroute.cs" />
     <Compile Include="Models\Public\ModelMyProfile.cs" />
+    <Compile Include="Models\Paybox\ModelPayboxTest.cs" />
+    <Compile Include="Models\TestApi\ModelTestApiOverload.cs" />
     <Compile Include="Models\TestApi\ModelTestApiResult.cs" />
     <Compile Include="Models\TestApi\ModelTestApiCall.cs" />
-    <Compile Include="Models\Test\ApiCall.cs" />
-    <Compile Include="Models\Test\ApiGetUrl.cs" />
-    <Compile Include="Models\Test\ApiListFeatures.cs" />
-    <Compile Include="Models\Test\ApiListUsers.cs" />
-    <Compile Include="Models\Test\ApiQuantityAllowed.cs" />
     <Compile Include="Code\Misc\Constants.cs" />
-    <Compile Include="Models\Test\ApiEnableTrial.cs" />
     <Compile Include="Models\Demo\DemoCheckLimitation.cs" />
     <Compile Include="Models\Public\ModelLogin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -152,7 +162,9 @@
     <Content Include="Views\Demo\Index.aspx" />
     <Content Include="Views\Home\Index.aspx" />
     <Content Include="Views\Home\Login.aspx" />
+    <Content Include="Views\Paybox\Traceroute.aspx" />
     <Content Include="Views\TestApi\Call.aspx" />
+    <Content Include="Views\TestApi\Overload.aspx" />
     <Content Include="Views\TestApi\ResultFeature.ascx" />
     <Content Include="Views\TestApi\ResultDeals.ascx" />
     <Content Include="Views\TestApi\ResultOffers.ascx" />
@@ -165,6 +177,7 @@
     <Content Include="Views\Shared\MyProfile.ascx" />
     <Content Include="Views\Shared\LogOn.ascx" />
     <Content Include="Views\Shared\NotImplemented.aspx" />
+    <Content Include="Views\Paybox\Index.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -187,9 +200,6 @@
     <Content Include="Views\Shared\Demo.Master" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Views\Shared\TestApi.Master" />
   </ItemGroup>
   <ItemGroup>
@@ -203,6 +213,7 @@
       <Name>LicenceToBill.Api</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -222,7 +233,7 @@
           <AutoAssignPort>False</AutoAssignPort>
           <DevelopmentServerPort>18531</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:39500</IISUrl>
+          <IISUrl>http://dev-ltb-demo.poweron.fr</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

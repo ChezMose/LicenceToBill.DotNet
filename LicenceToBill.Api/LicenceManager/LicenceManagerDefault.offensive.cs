@@ -16,14 +16,14 @@ namespace LicenceToBill.Api
     /// Offensive methods :
     /// assumes everything is ok and throws an exception if a problem occures
     /// </summary>
-    partial class LicenceManager
+    partial class LicenceManagerDefault
     {
         #region Users
 
         /// <summary>
         /// List all users
         /// </summary>
-        public static List<UserV2> ListUsers()
+        public List<UserV2> ListUsers()
         {
             List<UserV2> result = null;
 
@@ -32,6 +32,8 @@ namespace LicenceToBill.Api
 
             // create the request and send it
             var response = RequestFluent.Create(url)
+                .ContentType(LtbConstants.Json)
+                .BasicAuthentication(LtbConstants.KeyBusiness, LtbConstants.KeyApi)
                 .Send();
 
             // if succeeded
@@ -47,7 +49,7 @@ namespace LicenceToBill.Api
         /// <summary>
         /// Get a user
         /// </summary>
-        public static UserV2 GetUser(string keyUser)
+        public UserV2 GetUser(string keyUser)
         {
             UserV2 result = null;
 
@@ -56,6 +58,8 @@ namespace LicenceToBill.Api
 
             // create the request and send it
             var response = RequestFluent.Create(url)
+                .ContentType(LtbConstants.Json)
+                .BasicAuthentication(LtbConstants.KeyBusiness, LtbConstants.KeyApi)
                 .Send();
 
             // if succeeded
@@ -71,7 +75,7 @@ namespace LicenceToBill.Api
         /// <summary>
         /// Post a user
         /// </summary>
-        public static UserV2 PostUser(string keyUser, string nameUser, int? lcid = null)
+        public UserV2 PostUser(string keyUser, string nameUser, int? lcid = null)
         {
             UserV2 result = null;
 
@@ -88,6 +92,8 @@ namespace LicenceToBill.Api
 
             // create the request and send it
             var response = RequestFluent.Create(url)
+                .ContentType(LtbConstants.Json)
+                .BasicAuthentication(LtbConstants.KeyBusiness, LtbConstants.KeyApi)
                 .Method(HttpVerbs.Post)
                 .SendJson(userToSend);
 
@@ -104,7 +110,7 @@ namespace LicenceToBill.Api
         /// <summary>
         /// List users having access to given feature
         /// </summary>
-        public static List<UserV2> ListUsersByFeature(string keyFeature)
+        public List<UserV2> ListUsersByFeature(string keyFeature)
         {
             List<UserV2> result = null;
 
@@ -113,6 +119,8 @@ namespace LicenceToBill.Api
 
             // create the request and send it
             var response = RequestFluent.Create(url)
+                .ContentType(LtbConstants.Json)
+                .BasicAuthentication(LtbConstants.KeyBusiness, LtbConstants.KeyApi)
                 .Send();
 
             // if succeeded
@@ -133,7 +141,7 @@ namespace LicenceToBill.Api
         /// <summary>
         /// List all features
         /// </summary>
-        public static List<FeatureV2> ListFeatures(int? lcid = null)
+        public List<FeatureV2> ListFeatures(int? lcid = null)
         {
             List<FeatureV2> result = null;
 
@@ -142,6 +150,8 @@ namespace LicenceToBill.Api
              
             // create the request and send it
             var response = RequestFluent.Create(url)
+                .ContentType(LtbConstants.Json)
+                .BasicAuthentication(LtbConstants.KeyBusiness, LtbConstants.KeyApi)
                 .Send();
 
             // if succeeded
@@ -158,7 +168,7 @@ namespace LicenceToBill.Api
         /// <summary>
         /// List features accessible to given user
         /// </summary>
-        public static List<FeatureV2> ListFeaturesByUser(string keyUser)
+        public List<FeatureV2> ListFeaturesByUser(string keyUser)
         {
             List<FeatureV2> result = null;
 
@@ -167,6 +177,8 @@ namespace LicenceToBill.Api
 
             // create the request and send it
             var response = RequestFluent.Create(url)
+                .ContentType(LtbConstants.Json)
+                .BasicAuthentication(LtbConstants.KeyBusiness, LtbConstants.KeyApi)
                 .Send();
 
             // if succeeded
@@ -183,7 +195,7 @@ namespace LicenceToBill.Api
         /// <summary>
         /// Get a limitation for a feature and a user
         /// </summary>
-        public static FeatureV2 GetLimitation(string keyFeature, string keyUser)
+        public FeatureV2 GetLimitation(string keyFeature, string keyUser)
         {
             FeatureV2 result = null;
 
@@ -192,6 +204,8 @@ namespace LicenceToBill.Api
 
             // create the request and send it
             var response = RequestFluent.Create(url)
+                .ContentType(LtbConstants.Json)
+                .BasicAuthentication(LtbConstants.KeyBusiness, LtbConstants.KeyApi)
                 .Send();
 
             // if succeeded
@@ -212,7 +226,7 @@ namespace LicenceToBill.Api
         /// <summary>
         /// List all offers
         /// </summary>
-        public static List<OfferV2> ListOffers(int? lcid = null)
+        public List<OfferV2> ListOffers(int? lcid = null)
         {
             List<OfferV2> result = null;
 
@@ -221,6 +235,8 @@ namespace LicenceToBill.Api
 
             // create the request and send it
             var response = RequestFluent.Create(url)
+                .ContentType(LtbConstants.Json)
+                .BasicAuthentication(LtbConstants.KeyBusiness, LtbConstants.KeyApi)
                 .Send();
 
             // if succeeded
@@ -237,7 +253,7 @@ namespace LicenceToBill.Api
         /// <summary>
         /// List offers with user-specific url for given user
         /// </summary>
-        public static List<OfferV2> ListOffersByUser(string keyUser)
+        public List<OfferV2> ListOffersByUser(string keyUser)
         {
             List<OfferV2> result = null;
 
@@ -246,6 +262,8 @@ namespace LicenceToBill.Api
 
             // create the request and send it
             var response = RequestFluent.Create(url)
+                .ContentType(LtbConstants.Json)
+                .BasicAuthentication(LtbConstants.KeyBusiness, LtbConstants.KeyApi)
                 .Send();
 
             // if succeeded
@@ -266,7 +284,7 @@ namespace LicenceToBill.Api
         /// <summary>
         /// List deals subscribed by given user
         /// </summary>
-        public static List<DealV2> ListDealsByUser(string keyUser)
+        public List<DealV2> ListDealsByUser(string keyUser)
         {
             List<DealV2> result = null;
 
@@ -275,6 +293,8 @@ namespace LicenceToBill.Api
 
             // create the request and send it
             var response = RequestFluent.Create(url)
+                .ContentType(LtbConstants.Json)
+                .BasicAuthentication(LtbConstants.KeyBusiness, LtbConstants.KeyApi)
                 .Send();
 
             // if succeeded
@@ -293,7 +313,7 @@ namespace LicenceToBill.Api
         /// - Enable a free trial
         /// - returns its available features
         /// </summary>
-        public static List<FeatureV2> PostTrial(string keyOffer, string keyUser, string nameUser, int? lcid=null)
+        public List<FeatureV2> PostTrial(string keyOffer, string keyUser, string nameUser, int? lcid=null)
         {
             List<FeatureV2> result = null;
 
@@ -311,6 +331,8 @@ namespace LicenceToBill.Api
 
             // create the request and send it
             var response = RequestFluent.Create(url)
+                .ContentType(LtbConstants.Json)
+                .BasicAuthentication(LtbConstants.KeyBusiness, LtbConstants.KeyApi)
                 .Method(HttpVerbs.Post)
                 .SendJson(dealToSend);
 
@@ -332,7 +354,7 @@ namespace LicenceToBill.Api
         /// <summary>
         /// Manage failures for given response
         /// </summary>
-        private static void ManageFailures(ResponseEx response)
+        private void ManageFailures(ResponseEx response)
         {
             // if we got a response
             if(response != null)

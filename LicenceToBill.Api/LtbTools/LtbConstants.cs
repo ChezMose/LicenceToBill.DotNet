@@ -11,10 +11,6 @@ namespace LicenceToBill.Api.Tools
     public static class LtbConstants
     {
         /// <summary>
-        /// LicenceToBill URL
-        /// </summary>
-        public static readonly string UrlLicencetoBill = ConfigurationManager.AppSettings["LicenceToBillUrl"];
-        /// <summary>
         /// LicenceToBill API URL
         /// </summary>
         public static readonly string UrlApi = ConfigurationManager.AppSettings["LicenceToBillUrlApi"];
@@ -33,6 +29,10 @@ namespace LicenceToBill.Api.Tools
         /// </summary>
         public static readonly int LcidDefault = 9;
 
+        /// <summary>
+        /// Working business
+        /// </summary>
+        public static readonly string Json = "application/json";
         
     }
 }

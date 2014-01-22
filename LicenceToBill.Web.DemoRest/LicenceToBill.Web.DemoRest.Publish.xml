@@ -1,89 +1,159 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <publishData>
-  <publishProfile publishUrl="ftp://widgetbooster.com:2104" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FTP" replaceMatchingFiles="False" userName="LtbDemo" savePWD="True" userPWD="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh7Vpvl9u3Eql1b0SgVwBCwAAAAACAAAAAAAQZgAAAAEAACAAAAC3liocA4NjIGbBP/EC/kidkX5SVvQOQHySqT9hEwNAFQAAAAAOgAAAAAIAACAAAAAH8I+yU+m+Zwi3Txv1IOrkAtAtT3kXQLXt7dv+EZswShAAAABFQwNCLRfFPnwBBPchqvw7QAAAAMVGUCUAfjtwKYR5Az/HQUVS15iTDqdQKTzakHHuEFl8ok21gR8JFla9ftJWQsRzEBcdrfBFuK8/6hUOGJRVfXI=" SelectedForPublish="True">
-    <file relUrl="bin/Microsoft.Web.Infrastructure.xml" publishTime="12/20/2010 09:52:36" />
+  <publishProfile publishUrl="D:\- Release -\- collector -\Demo" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="LtbDemo" savePWD="True" userPWD="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh7Vpvl9u3Eql1b0SgVwBCwAAAAACAAAAAAAQZgAAAAEAACAAAAC3liocA4NjIGbBP/EC/kidkX5SVvQOQHySqT9hEwNAFQAAAAAOgAAAAAIAACAAAAAH8I+yU+m+Zwi3Txv1IOrkAtAtT3kXQLXt7dv+EZswShAAAABFQwNCLRfFPnwBBPchqvw7QAAAAMVGUCUAfjtwKYR5Az/HQUVS15iTDqdQKTzakHHuEFl8ok21gR8JFla9ftJWQsRzEBcdrfBFuK8/6hUOGJRVfXI=" SelectedForPublish="True">
+    <file relUrl="bin/Microsoft.WindowsAzure.StorageClient.xml" publishTime="10/24/2011 16:37:32" />
     <file relUrl="Content/Images/nok.gif" publishTime="10/26/2011 14:56:04" />
-    <file relUrl="bin/LicenceToBill.Web.DemoRest.dll" publishTime="03/11/2013 19:48:56" />
-    <file relUrl="Scripts/MicrosoftAjax.js" publishTime="10/25/2011 12:42:00" />
+    <file relUrl="Content/Images/share.png" publishTime="04/04/2012 13:56:28" />
+    <file relUrl="bin/LicenceToBill.Api.pdb" publishTime="12/26/2013 12:03:04" />
     <file relUrl="Content/Images/loading.gif" publishTime="10/26/2011 14:56:04" />
     <file relUrl="Views/Demo/CreditCardUpdatedPartial.aspx" publishTime="01/23/2013 16:58:23" />
-    <file relUrl="Content/Images/sample2.png" publishTime="04/04/2012 16:02:49" />
-    <file relUrl="bin/LicenceToBill.Web.DemoRest.pdb" publishTime="03/11/2013 19:48:56" />
-    <file relUrl="Scripts/MicrosoftMvcValidation.debug.js" publishTime="10/25/2011 12:42:00" />
+    <file relUrl="bin/LicenceToBill.Web.DemoRest.pdb" publishTime="12/26/2013 12:11:30" />
+    <file relUrl="bin/LicenceToBill.Web.DemoRest.dll" publishTime="12/26/2013 12:11:30" />
     <file relUrl="Views/Shared/LogOn.ascx" publishTime="03/07/2013 17:59:17" />
     <file relUrl="bin/System.Web.Mvc.dll" publishTime="01/05/2011 16:42:16" />
-    <file relUrl="Views/Shared/MyProfile.ascx" publishTime="01/24/2013 09:41:24" />
-    <file relUrl="Web.config" publishTime="03/11/2013 19:49:27" />
-    <file relUrl="Views/TestApi/ResultUsers.ascx" publishTime="01/25/2013 11:30:17" />
+    <file relUrl="Web.config" publishTime="12/26/2013 12:12:38" />
+    <file relUrl="Views/TestApi/ResultUsers.ascx" publishTime="03/12/2013 15:29:37" />
     <file relUrl="bin/System.Web.WebPages.Deployment.xml" publishTime="12/20/2010 09:52:36" />
-    <file relUrl="bin/Microsoft.WindowsAzure.ServiceRuntime.dll" publishTime="11/03/2011 14:32:52" />
-    <file relUrl="Content/monReseauPro.css" publishTime="01/25/2013 11:46:40" />
-    <file relUrl="Scripts/MicrosoftMvcAjax.js" publishTime="10/25/2011 12:42:00" />
-    <file relUrl="Scripts/jquery.unobtrusive-ajax.js" publishTime="10/25/2011 12:42:00" />
-    <file relUrl="Views/TestApi/Call.aspx" publishTime="01/25/2013 11:45:26" />
+    <file relUrl="Content/monReseauPro.css" publishTime="03/12/2013 15:34:35" />
+    <file relUrl="bin/Newtonsoft.Json.dll" publishTime="06/25/2012 19:11:22" />
+    <file relUrl="Views/TestApi/Call.aspx" publishTime="03/12/2013 15:43:02" />
     <file relUrl="Views/Shared/NotImplemented.aspx" publishTime="01/23/2013 17:36:35" />
     <file relUrl="Global.asax" publishTime="01/23/2013 17:08:48" />
-    <file relUrl="Scripts/MicrosoftMvcValidation.js" publishTime="10/25/2011 12:42:00" />
-    <file relUrl="Views/TestApi/Ressources.ascx" publishTime="01/25/2013 12:07:51" />
+    <file relUrl="Views/TestApi/Ressources.ascx" publishTime="09/12/2013 16:35:16" />
     <file relUrl="Content/Images/sample1.png" publishTime="04/04/2012 14:53:06" />
     <file relUrl="bin/Newtonsoft.Json.xml" publishTime="06/25/2012 19:11:22" />
     <file relUrl="bin/System.Web.Helpers.dll" publishTime="01/05/2011 14:45:38" />
     <file relUrl="bin/System.Web.Razor.xml" publishTime="12/20/2010 09:52:36" />
     <file relUrl="bin/System.Web.WebPages.dll" publishTime="01/05/2011 14:45:38" />
-    <file relUrl="Scripts/jquery.unobtrusive-ajax.min.js" publishTime="10/25/2011 12:42:00" />
     <file relUrl="Views/Demo/PaymentCancel.aspx" publishTime="01/23/2013 17:01:13" />
     <file relUrl="bin/System.Web.Mvc.xml" publishTime="02/09/2011 10:26:24" />
     <file relUrl="bin/System.Web.Helpers.xml" publishTime="12/19/2010 22:59:38" />
-    <file relUrl="bin/Microsoft.WindowsAzure.StorageClient.xml" publishTime="10/24/2011 16:37:32" />
     <file relUrl="Views/Shared/TestApi.Master" publishTime="01/25/2013 11:45:46" />
-    <file relUrl="Views/TestApi/ResultDeals.ascx" publishTime="01/25/2013 13:09:38" />
-    <file relUrl="Scripts/jquery-1.5.1.js" publishTime="10/25/2011 12:42:00" />
+    <file relUrl="Views/TestApi/ResultDeals.ascx" publishTime="03/12/2013 15:29:37" />
     <file relUrl="Views/Demo/CreditCardUpated.aspx" publishTime="01/23/2013 16:58:23" />
-    <file relUrl="bin/Microsoft.WindowsAzure.ServiceRuntime.xml" publishTime="11/03/2011 14:05:28" />
     <file relUrl="Views/Demo/CreditCardRegistered.aspx" publishTime="01/23/2013 16:55:48" />
     <file relUrl="bin/Microsoft.Web.Infrastructure.dll" publishTime="01/05/2011 14:45:38" />
-    <file relUrl="Views/Shared/Site.Master" publishTime="03/08/2013 09:28:14" />
+    <file relUrl="Views/Shared/Site.Master" publishTime="03/12/2013 17:46:49" />
+    <file relUrl="Views/TestApi/ResultUser.ascx" publishTime="03/12/2013 15:29:37" />
     <file relUrl="Content/Images/sample3.png" publishTime="04/04/2012 16:04:59" />
-    <file relUrl="Views/TestApi/ResultFeature.ascx" publishTime="01/25/2013 13:02:36" />
-    <file relUrl="packages.config" publishTime="06/07/2012 14:50:27" />
+    <file relUrl="Views/TestApi/ResultFeature.ascx" publishTime="03/12/2013 15:29:37" />
+    <file relUrl="Views/TestApi/Index.aspx" publishTime="01/25/2013 11:46:06" />
     <file relUrl="Views/Demo/PaymentSuccess.aspx" publishTime="01/23/2013 17:01:13" />
+    <file relUrl="bin/Microsoft.Web.Infrastructure.xml" publishTime="12/20/2010 09:52:36" />
     <file relUrl="Content/Images/ok.png" publishTime="10/26/2011 14:56:04" />
     <file relUrl="bin/System.Web.WebPages.Razor.dll" publishTime="01/05/2011 14:45:38" />
     <file relUrl="Views/Home/Index.aspx" publishTime="01/25/2013 18:03:26" />
-    <file relUrl="Views/TestApi/ResultOffers.ascx" publishTime="01/25/2013 11:15:38" />
+    <file relUrl="bin/LicenceToBill.Api.dll" publishTime="12/26/2013 12:03:04" />
+    <file relUrl="Views/Home/Login.aspx" publishTime="01/23/2013 17:51:44" />
+    <file relUrl="Views/TestApi/ResultOffers.ascx" publishTime="03/12/2013 15:29:37" />
     <file relUrl="Content/Images/world_link.png" publishTime="10/26/2011 14:56:04" />
-    <file relUrl="Views/TestApi/ResultFeatures.ascx" publishTime="01/25/2013 11:30:05" />
-    <file relUrl="Views/TestApi/Index.aspx" publishTime="01/25/2013 11:46:06" />
+    <file relUrl="Views/TestApi/ResultFeatures.ascx" publishTime="03/12/2013 15:29:37" />
     <file relUrl="bin/Microsoft.WindowsAzure.Diagnostics.dll" publishTime="11/03/2011 14:32:52" />
     <file relUrl="Content/Images/link_go.png" publishTime="10/26/2011 16:51:50" />
     <file relUrl="bin/System.Web.WebPages.Razor.xml" publishTime="12/20/2010 09:52:36" />
+    <file relUrl="Views/TestApi/Overload.aspx" publishTime="09/30/2013 15:29:54" />
     <file relUrl="bin/Newtonsoft.Json.pdb" publishTime="11/23/2010 11:09:33" />
-    <file relUrl="bin/Newtonsoft.Json.dll" publishTime="06/25/2012 19:11:22" />
-    <file relUrl="Content/Images/share.png" publishTime="04/04/2012 13:56:28" />
-    <file relUrl="Scripts/jquery.validate.unobtrusive.js" publishTime="10/25/2011 12:42:00" />
+    <file relUrl="Content/Images/sample2.png" publishTime="04/04/2012 16:02:49" />
+    <file relUrl="bin/Microsoft.WindowsAzure.CloudDrive.xml" publishTime="10/24/2011 16:37:32" />
     <file relUrl="Views/Demo/Index.aspx" publishTime="01/23/2013 19:04:23" />
-    <file relUrl="Views/Home/Login.aspx" publishTime="01/23/2013 17:51:44" />
-    <file relUrl="Scripts/jquery-1.5.1.min.js" publishTime="10/25/2011 12:42:00" />
     <file relUrl="Content/Images/border-bottom.png" publishTime="10/25/2012 10:58:25" />
-    <file relUrl="Views/Web.config" publishTime="03/11/2013 19:49:27" />
+    <file relUrl="Views/Web.config" publishTime="12/02/2013 17:39:14" />
     <file relUrl="Content/Images/back.jpg" publishTime="06/05/2012 17:16:08" />
     <file relUrl="Content/Site.css" publishTime="11/24/2011 11:41:21" />
+    <file relUrl="Views/Demo/PaymentFailure.aspx" publishTime="01/23/2013 17:01:11" />
     <file relUrl="Content/Images/border-top.png" publishTime="10/25/2012 10:58:25" />
     <file relUrl="Views/Demo/Feature.aspx" publishTime="01/24/2013 11:40:13" />
     <file relUrl="Views/Shared/Error.aspx" publishTime="01/23/2013 17:36:11" />
     <file relUrl="robots.txt" publishTime="10/09/2012 17:47:09" />
-    <file relUrl="Scripts/MicrosoftAjax.debug.js" publishTime="10/25/2011 12:42:00" />
     <file relUrl="bin/Microsoft.WindowsAzure.StorageClient.dll" publishTime="11/03/2011 14:32:50" />
-    <file relUrl="bin/System.Web.Razor.dll" publishTime="01/05/2011 14:45:38" />
+    <file relUrl="Views/Paybox/Index.aspx" publishTime="12/26/2013 12:12:20" />
     <file relUrl="Views/Shared/Demo.Master" publishTime="01/25/2013 11:33:34" />
     <file relUrl="Scripts/jquery.form.js" publishTime="10/26/2011 15:02:34" />
-    <file relUrl="Views/Demo/PaymentFailure.aspx" publishTime="01/23/2013 17:01:11" />
+    <file relUrl="Views/TestApi/Result.ascx" publishTime="03/12/2013 15:42:46" />
     <file relUrl="bin/System.Web.WebPages.xml" publishTime="12/19/2010 22:59:38" />
-    <file relUrl="Scripts/MicrosoftMvcAjax.debug.js" publishTime="10/25/2011 12:42:00" />
+    <file relUrl="bin/System.Web.Razor.dll" publishTime="01/05/2011 14:45:38" />
+    <file relUrl="bin/Microsoft.WindowsAzure.CloudDrive.dll" publishTime="11/03/2011 14:32:52" />
     <file relUrl="bin/Microsoft.WindowsAzure.Diagnostics.xml" publishTime="11/03/2011 14:04:58" />
-    <file relUrl="Views/TestApi/Result.ascx" publishTime="01/25/2013 12:53:29" />
-    <file relUrl="Scripts/jquery.validate.unobtrusive.min.js" publishTime="10/25/2011 12:42:00" />
-    <file relUrl="Views/TestApi/ResultUser.ascx" publishTime="01/25/2013 11:25:43" />
+    <file relUrl="Views/Paybox/Traceroute.aspx" publishTime="12/10/2013 16:24:20" />
+    <file relUrl="Views/Shared/MyProfile.ascx" publishTime="01/24/2013 09:41:24" />
+    <file relUrl="bin/System.Web.WebPages.Deployment.dll" publishTime="01/05/2011 14:45:38" />
+    <file relUrl="Content/Images/sample4.png" publishTime="04/04/2012 16:06:02" />
+  </publishProfile>
+  <publishProfile publishUrl="D:\- Release -\- collector -\LicenceToBill" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile2" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="False">
+    <file relUrl="bin/Microsoft.WindowsAzure.StorageClient.xml" publishTime="10/24/2011 16:37:32" />
+    <file relUrl="Content/Images/nok.gif" publishTime="10/26/2011 14:56:04" />
+    <file relUrl="Content/Images/share.png" publishTime="04/04/2012 13:56:28" />
+    <file relUrl="bin/LicenceToBill.Api.pdb" publishTime="10/01/2013 00:31:15" />
+    <file relUrl="Content/Images/loading.gif" publishTime="10/26/2011 14:56:04" />
+    <file relUrl="Views/Demo/CreditCardUpdatedPartial.aspx" publishTime="01/23/2013 16:58:23" />
+    <file relUrl="bin/LicenceToBill.Web.DemoRest.pdb" publishTime="12/02/2013 17:39:08" />
+    <file relUrl="bin/LicenceToBill.Web.DemoRest.dll" publishTime="12/02/2013 17:39:09" />
+    <file relUrl="Views/Shared/LogOn.ascx" publishTime="03/07/2013 17:59:17" />
+    <file relUrl="bin/System.Web.Mvc.dll" publishTime="01/05/2011 16:42:16" />
+    <file relUrl="Web.config" publishTime="12/02/2013 17:39:14" />
+    <file relUrl="Views/TestApi/ResultUsers.ascx" publishTime="03/12/2013 15:29:37" />
+    <file relUrl="bin/System.Web.WebPages.Deployment.xml" publishTime="12/20/2010 09:52:36" />
+    <file relUrl="Content/monReseauPro.css" publishTime="03/12/2013 15:34:35" />
+    <file relUrl="bin/Newtonsoft.Json.dll" publishTime="06/25/2012 19:11:22" />
+    <file relUrl="Views/TestApi/Call.aspx" publishTime="03/12/2013 15:43:02" />
+    <file relUrl="Views/Shared/NotImplemented.aspx" publishTime="01/23/2013 17:36:35" />
+    <file relUrl="Global.asax" publishTime="01/23/2013 17:08:48" />
+    <file relUrl="Views/TestApi/Ressources.ascx" publishTime="09/12/2013 16:35:16" />
+    <file relUrl="Content/Images/sample1.png" publishTime="04/04/2012 14:53:06" />
+    <file relUrl="bin/Newtonsoft.Json.xml" publishTime="06/25/2012 19:11:22" />
+    <file relUrl="bin/System.Web.Helpers.dll" publishTime="01/05/2011 14:45:38" />
+    <file relUrl="bin/System.Web.Razor.xml" publishTime="12/20/2010 09:52:36" />
+    <file relUrl="bin/System.Web.WebPages.dll" publishTime="01/05/2011 14:45:38" />
+    <file relUrl="Views/Demo/PaymentCancel.aspx" publishTime="01/23/2013 17:01:13" />
+    <file relUrl="bin/System.Web.Mvc.xml" publishTime="02/09/2011 10:26:24" />
+    <file relUrl="bin/System.Web.Helpers.xml" publishTime="12/19/2010 22:59:38" />
+    <file relUrl="Views/Shared/TestApi.Master" publishTime="01/25/2013 11:45:46" />
+    <file relUrl="Views/TestApi/ResultDeals.ascx" publishTime="03/12/2013 15:29:37" />
+    <file relUrl="Views/Demo/CreditCardUpated.aspx" publishTime="01/23/2013 16:58:23" />
+    <file relUrl="Views/Demo/CreditCardRegistered.aspx" publishTime="01/23/2013 16:55:48" />
+    <file relUrl="bin/Microsoft.Web.Infrastructure.dll" publishTime="01/05/2011 14:45:38" />
+    <file relUrl="Views/TestApi/ResultUser.ascx" publishTime="03/12/2013 15:29:37" />
+    <file relUrl="Content/Images/sample3.png" publishTime="04/04/2012 16:04:59" />
+    <file relUrl="Views/TestApi/ResultFeature.ascx" publishTime="03/12/2013 15:29:37" />
+    <file relUrl="Views/TestApi/Index.aspx" publishTime="01/25/2013 11:46:06" />
+    <file relUrl="bin/System.Web.WebPages.Razor.xml" publishTime="12/20/2010 09:52:36" />
+    <file relUrl="Views/Demo/PaymentSuccess.aspx" publishTime="01/23/2013 17:01:13" />
+    <file relUrl="bin/Microsoft.Web.Infrastructure.xml" publishTime="12/20/2010 09:52:36" />
+    <file relUrl="Content/Images/ok.png" publishTime="10/26/2011 14:56:04" />
+    <file relUrl="bin/System.Web.WebPages.Razor.dll" publishTime="01/05/2011 14:45:38" />
+    <file relUrl="Views/Home/Index.aspx" publishTime="01/25/2013 18:03:26" />
+    <file relUrl="bin/LicenceToBill.Api.dll" publishTime="10/01/2013 00:31:15" />
+    <file relUrl="Views/Home/Login.aspx" publishTime="01/23/2013 17:51:44" />
+    <file relUrl="Views/TestApi/ResultOffers.ascx" publishTime="03/12/2013 15:29:37" />
+    <file relUrl="Content/Images/world_link.png" publishTime="10/26/2011 14:56:04" />
+    <file relUrl="Views/TestApi/ResultFeatures.ascx" publishTime="03/12/2013 15:29:37" />
+    <file relUrl="bin/Microsoft.WindowsAzure.Diagnostics.dll" publishTime="11/03/2011 14:32:52" />
+    <file relUrl="Content/Images/link_go.png" publishTime="10/26/2011 16:51:50" />
+    <file relUrl="Views/Shared/Site.Master" publishTime="03/12/2013 17:46:49" />
+    <file relUrl="Views/TestApi/Overload.aspx" publishTime="09/30/2013 15:29:54" />
+    <file relUrl="bin/Newtonsoft.Json.pdb" publishTime="11/23/2010 11:09:33" />
+    <file relUrl="Content/Images/sample2.png" publishTime="04/04/2012 16:02:49" />
+    <file relUrl="bin/Microsoft.WindowsAzure.CloudDrive.xml" publishTime="10/24/2011 16:37:32" />
+    <file relUrl="Views/Demo/Index.aspx" publishTime="01/23/2013 19:04:23" />
+    <file relUrl="Content/Images/border-bottom.png" publishTime="10/25/2012 10:58:25" />
+    <file relUrl="Views/Web.config" publishTime="12/02/2013 17:39:14" />
+    <file relUrl="Content/Images/back.jpg" publishTime="06/05/2012 17:16:08" />
+    <file relUrl="Content/Site.css" publishTime="11/24/2011 11:41:21" />
+    <file relUrl="Views/Demo/PaymentFailure.aspx" publishTime="01/23/2013 17:01:11" />
+    <file relUrl="Content/Images/border-top.png" publishTime="10/25/2012 10:58:25" />
+    <file relUrl="Views/Demo/Feature.aspx" publishTime="01/24/2013 11:40:13" />
+    <file relUrl="Views/Shared/Error.aspx" publishTime="01/23/2013 17:36:11" />
+    <file relUrl="robots.txt" publishTime="10/09/2012 17:47:09" />
+    <file relUrl="bin/Microsoft.WindowsAzure.StorageClient.dll" publishTime="11/03/2011 14:32:50" />
+    <file relUrl="Views/Paybox/Index.aspx" publishTime="09/26/2013 12:00:53" />
+    <file relUrl="Views/Shared/Demo.Master" publishTime="01/25/2013 11:33:34" />
+    <file relUrl="Scripts/jquery.form.js" publishTime="10/26/2011 15:02:34" />
+    <file relUrl="Views/TestApi/Result.ascx" publishTime="03/12/2013 15:42:46" />
+    <file relUrl="bin/System.Web.WebPages.xml" publishTime="12/19/2010 22:59:38" />
+    <file relUrl="bin/System.Web.Razor.dll" publishTime="01/05/2011 14:45:38" />
+    <file relUrl="bin/Microsoft.WindowsAzure.CloudDrive.dll" publishTime="11/03/2011 14:32:52" />
+    <file relUrl="bin/Microsoft.WindowsAzure.Diagnostics.xml" publishTime="11/03/2011 14:04:58" />
+    <file relUrl="Views/Shared/MyProfile.ascx" publishTime="01/24/2013 09:41:24" />
     <file relUrl="bin/System.Web.WebPages.Deployment.dll" publishTime="01/05/2011 14:45:38" />
     <file relUrl="Content/Images/sample4.png" publishTime="04/04/2012 16:06:02" />
   </publishProfile>
