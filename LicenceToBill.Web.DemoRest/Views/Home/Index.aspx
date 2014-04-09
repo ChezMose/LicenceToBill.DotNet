@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="Zone1" runat="server">
+<asp:Content ContentPlaceHolderID="Zone1" runat="server">
 
     <div class="home">
         <h2>This is an innovative service</h2>
@@ -23,7 +23,7 @@
 
 </asp:Content>
 
-<asp:Content ID="Content3" ContentPlaceHolderID="Zone3" runat="server">
+<asp:Content ContentPlaceHolderID="Zone3" runat="server">
 
     <div class="home">
         <div class="third1 left">

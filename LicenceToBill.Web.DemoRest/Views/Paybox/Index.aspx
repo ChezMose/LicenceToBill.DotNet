@@ -13,6 +13,9 @@
             <%= Html.DropDownList("type", this.Model.Types) %>
             <br />
             <br />
+            <input type="text" name="ip" placeholder="IP (optionnnal, override the choosen server)" <%= this.Model.Ip %> />
+            <br />
+            <br />
             <textarea name="bodyRequest" style="width:100%;height:250px;"><%= this.Model.BodyRequest %></textarea>
             <br />
             <br />

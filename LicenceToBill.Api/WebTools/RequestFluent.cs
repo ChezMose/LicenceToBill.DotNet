@@ -294,7 +294,7 @@ namespace LicenceToBill.Api.Tools
         /// </summary>
         public RequestFluent SetUrlParameter(string parameter, string value)
         {
-            this._url = HelperUrl.SetParameter(this._url, parameter, value);
+            this._uri = HelperUrl.SetParameter(this._uri, parameter, value);
 
             return this;
         }
@@ -373,7 +373,7 @@ namespace LicenceToBill.Api.Tools
             else
             {
                 // then this is a failure
-                result = ResponseEx.Failure(this._url, errorMessage);
+                result = ResponseEx.Failure(this._uri, errorMessage);
             }
             return result;
         }
@@ -422,7 +422,7 @@ namespace LicenceToBill.Api.Tools
             else
             {
                 // then this is a failure
-                result = ResponseEx.Failure(this._url, errorMessage);
+                result = ResponseEx.Failure(this._uri, errorMessage);
             }
             return result;
         }
@@ -471,7 +471,7 @@ namespace LicenceToBill.Api.Tools
             else
             {
                 // then this is a failure
-                result = ResponseEx.Failure(this._url, errorMessage);
+                result = ResponseEx.Failure(this._uri, errorMessage);
             }
             return result;
         }
@@ -483,8 +483,8 @@ namespace LicenceToBill.Api.Tools
         /// <summary>
         /// Prepare the request
         /// </summary>
-        /// <param name="contentType">(optionnal) the content type, if forced</param>
-        /// <param name="timeout">(optionnal) given request timeout</param>
+        /// <param name="contentType">(optional) the content type, if forced</param>
+        /// <param name="timeout">(optional) given request timeout</param>
         /// <param name="errorMessage">the error message, if request preparation failed</param>
         /// <returns>A valid HttpWebRequest, may be null</returns>
         private HttpWebRequest InnerPrepareRequest(ContentType contentType, int? timeout, out string errorMessage)
@@ -495,7 +495,7 @@ namespace LicenceToBill.Api.Tools
             try
             {
                 // create the request
-                request = (WebRequest.Create(this._url) as HttpWebRequest);
+                request = (WebRequest.Create(this._uri) as HttpWebRequest);
             }
             catch(Exception exc)
             {
@@ -581,10 +581,10 @@ namespace LicenceToBill.Api.Tools
         /// <summary>
         /// Base constructor
         /// </summary>
-        private RequestFluent(string url)
+        private RequestFluent(string uri)
         {
             // create the request
-            this._url = url;
+            this._uri = uri;
         }
 
         #endregion
@@ -594,7 +594,7 @@ namespace LicenceToBill.Api.Tools
         /// <summary>
         /// Request url
         /// </summary>
-        private string _url = null;
+        private string _uri = null;
         /// <summary>
         /// HTTP Verb (method)
         /// </summary>

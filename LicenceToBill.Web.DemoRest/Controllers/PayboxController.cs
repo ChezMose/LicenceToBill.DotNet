@@ -28,12 +28,13 @@ namespace LicenceToBill.Web.DemoRest
 
         [HttpPost]
         [Authenticated]
-        public ActionResult Index(TypeUrlPaybox? type, string bodyRequest)
+        public ActionResult Index(TypeUrlPaybox? type, string ip, string bodyRequest)
         {
             // create the model
             var model = new ModelPayboxTest
                             {
-                                Type = type
+                                Type = type,
+                                Ip = ip
                             };
 
             // if we have a body
@@ -43,7 +44,7 @@ namespace LicenceToBill.Web.DemoRest
                 // push the body into the model
                 model.BodyRequest = bodyRequest;
                 // compute the url
-                model.Url = this.GetUrl(type.Value);
+                model.Url = this.GetUrl(type.Value, ip);
 
                 // start a timer
                 var timer = Stopwatch.StartNew();
@@ -98,28 +99,34 @@ namespace LicenceToBill.Web.DemoRest
         /// <summary>
         /// Enum => url
         /// </summary>
-        private string GetUrl(TypeUrlPaybox type)
+        private string GetUrl(TypeUrlPaybox type, string ip)
         {
-            switch(type)
+            if(!string.IsNullOrEmpty(ip))
             {
-                case TypeUrlPaybox.PppsPreprodPlus:
-                case TypeUrlPaybox.PppsPreprod:
-                    return "https://preprod-ppps.paybox.com/PPPS.php";
-
-                case TypeUrlPaybox.Ppps:
-                    return "https://ppps.paybox.com/PPPS.php";
-
-                case TypeUrlPaybox.Ppps1:
-                    return "https://ppps1.paybox.com/PPPS.php";
-
-                case TypeUrlPaybox.Ppps2:
-                    return "https://ppps2.paybox.com/PPPS.php";
-
-                case TypeUrlPaybox.TestHttps:
-                    return "https://code.google.com/apis/console";
-                default:
-                    return "no no no";
+                return "https://" + ip + "/PPPS.php";
             }
+            else
+            {
+                switch (type)
+                {
+                    case TypeUrlPaybox.PppsPreprodPlus:
+                    case TypeUrlPaybox.PppsPreprod:
+                        return "https://preprod-ppps.paybox.com/PPPS.php";
+
+                    case TypeUrlPaybox.Ppps:
+                        return "https://ppps.paybox.com/PPPS.php";
+
+                    case TypeUrlPaybox.Ppps1:
+                        return "https://ppps1.paybox.com/PPPS.php";
+
+                    case TypeUrlPaybox.Ppps2:
+                        return "https://ppps2.paybox.com/PPPS.php";
+
+                    case TypeUrlPaybox.TestHttps:
+                        return "https://code.google.com/apis/console";
+                }
+            }
+            return null;
         }
 
         #endregion

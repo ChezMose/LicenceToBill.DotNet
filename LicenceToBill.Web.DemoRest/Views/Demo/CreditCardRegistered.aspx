@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Views/Shared/Demo.Master" Inherits="System.Web.Mvc.ViewPage" %>
 
-<asp:Content ID="Content2" ContentPlaceHolderID="Zone1" runat="server">
+<asp:Content ContentPlaceHolderID="Zone1" runat="server">
 
     <div class="payment">
 

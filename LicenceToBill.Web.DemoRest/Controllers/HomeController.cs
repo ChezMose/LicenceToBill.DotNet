@@ -78,7 +78,7 @@ namespace LicenceToBill.Web.DemoRest
                             };
 
             // add a displayable error
-            this.ModelState.AddModelError("other", "authentication failed");
+            this.ModelState.AddModelError("common", "authentication failed");
             // render the view
             return View(model);
         }

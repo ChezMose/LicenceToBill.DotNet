@@ -18,7 +18,7 @@
 
 </asp:Content>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="Zone1" runat="server">
+<asp:Content ContentPlaceHolderID="Zone1" runat="server">
 
     <div class="demo">
 
@@ -28,7 +28,7 @@
 
 </asp:Content>
 
-<asp:Content ID="Content2" ContentPlaceHolderID="Zone2" runat="server">
+<asp:Content ContentPlaceHolderID="Zone2" runat="server">
 
     <%  // get the data
         var model = this.Model;
@@ -109,7 +109,7 @@
 
 </asp:Content>
 
-<asp:Content ID="Content3" ContentPlaceHolderID="Zone3" runat="server">
+<asp:Content ContentPlaceHolderID="Zone3" runat="server">
 
     <div id="code_result" class="api-result" style="display:none;">
 

@@ -9,7 +9,7 @@
         
                 
                 <div>
-                    <%= Html.ValidationMessage("other") %>&nbsp;
+                    <%= this.ValidationSummary() %>&nbsp;
                 </div>
                 <ul>
                     <li><input type="text" name="login" value="<%= this.Model.Login %>" /></li>

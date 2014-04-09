@@ -114,7 +114,6 @@
     <Compile Include="Code\Misc\DataManager.cs" />
     <Compile Include="Code\Misc\CustomPrincipal.cs" />
     <Compile Include="Code\Misc\ExtensionsViewUserControl.cs" />
-    <Compile Include="Controllers\TestApiController.overload.cs" />
     <Compile Include="Controllers\PayboxController.cs" />
     <Compile Include="Controllers\TestApiController.cs" />
     <Compile Include="Controllers\DemoController.cs" />
@@ -125,7 +124,6 @@
     <Compile Include="Models\Paybox\ModelPayboxTraceroute.cs" />
     <Compile Include="Models\Public\ModelMyProfile.cs" />
     <Compile Include="Models\Paybox\ModelPayboxTest.cs" />
-    <Compile Include="Models\TestApi\ModelTestApiOverload.cs" />
     <Compile Include="Models\TestApi\ModelTestApiResult.cs" />
     <Compile Include="Models\TestApi\ModelTestApiCall.cs" />
     <Compile Include="Code\Misc\Constants.cs" />
@@ -164,7 +162,6 @@
     <Content Include="Views\Home\Login.aspx" />
     <Content Include="Views\Paybox\Traceroute.aspx" />
     <Content Include="Views\TestApi\Call.aspx" />
-    <Content Include="Views\TestApi\Overload.aspx" />
     <Content Include="Views\TestApi\ResultFeature.ascx" />
     <Content Include="Views\TestApi\ResultDeals.ascx" />
     <Content Include="Views\TestApi\ResultOffers.ascx" />

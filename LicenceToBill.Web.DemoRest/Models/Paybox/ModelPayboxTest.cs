@@ -20,6 +20,10 @@ namespace LicenceToBill.Web.DemoRest
         /// Url type
         /// </summary>
         public PayboxController.TypeUrlPaybox? Type { get; set; }
+        /// <summary>
+        /// Ip
+        /// </summary>
+        public string Ip { get; set; }
 
         /// <summary>
         /// Url sent to

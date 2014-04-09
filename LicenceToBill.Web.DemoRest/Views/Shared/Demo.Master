@@ -4,7 +4,7 @@
     <asp:ContentPlaceHolder ID="Zone1" runat="server" />
 </asp:Content>
 
-<asp:Content ID="Content3" ContentPlaceHolderID="Zone3" runat="server">
+<asp:Content ContentPlaceHolderID="Zone3" runat="server">
 
     <div class="login">
         <div class="third1 left">

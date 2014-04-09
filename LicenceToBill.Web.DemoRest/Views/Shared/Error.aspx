@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="Zone1" runat="server">
+<asp:Content ContentPlaceHolderID="Zone1" runat="server">
 
     <div class="error">
         <h2>An error occured</h2>
