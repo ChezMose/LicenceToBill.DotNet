@@ -40,10 +40,10 @@ namespace LicenceToBill.Api
         [DataMember(EmitDefaultValue=false, Name="description")]
         public string Description { get; set; }
         /// <summary>
-        /// Deal devise
+        /// Deal currency
         /// </summary>
-        [DataMember(EmitDefaultValue=false, Name="devise")]
-        public string Devise { get; set; }
+        [DataMember(EmitDefaultValue=false, Name="currency")]
+        public string Currency { get; set; }
 
         /// <summary>
         /// Start date of the deal

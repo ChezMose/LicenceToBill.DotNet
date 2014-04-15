@@ -20,8 +20,8 @@ namespace LicenceToBill.Api
         /// <summary>
         /// User language
         /// </summary>
-        [DataMember(Name="lcid", EmitDefaultValue=false)]
-        public int? Lcid { get; set; }
+        [DataMember(Name="lcid_user", EmitDefaultValue=false)]
+        public int? LcidUser { get; set; }
         /// <summary>
         /// User name
         /// </summary>

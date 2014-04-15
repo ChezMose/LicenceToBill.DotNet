@@ -87,7 +87,7 @@ namespace LicenceToBill.Api
                                  {
                                    KeyUser = keyUser,
                                    NameUser = nameUser,
-                                   Lcid = (lcid ?? LtbConstants.LcidDefault)
+                                   LcidUser = (lcid ?? LtbConstants.LcidDefault)
                                  };
 
             // create the request and send it

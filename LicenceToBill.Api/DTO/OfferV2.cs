@@ -29,10 +29,10 @@ namespace LicenceToBill.Api
         [DataMember(Name="description", EmitDefaultValue=false)]
         public string DescriptionLocalized { get; set; }
         /// <summary>
-        /// Devise for this offer
+        /// Currency for this offer
         /// </summary>
-        [DataMember(Name="devise", EmitDefaultValue=false)]
-        public string Devise { get; set; }
+        [DataMember(Name="currency", EmitDefaultValue=false)]
+        public string Currency { get; set; }
 
         /// <summary>
         /// Url for the 'choose payment' page
