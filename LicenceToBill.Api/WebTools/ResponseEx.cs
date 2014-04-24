@@ -39,6 +39,9 @@ namespace LicenceToBill.Api.Tools
 
                 try
                 {
+                    // remove keep alive to prevent error " server committed a protocol violation. section=responsestatusline"
+                    request.KeepAlive = false;
+
                     // now get a response
                     response = (request.GetResponse() as HttpWebResponse);
                 }
